@@ -96,9 +96,8 @@ open TestResults/test-report.html      # macOS; use xdg-open (Linux) or start (W
 
 ## Use of AI
 
-**Disclaimer:** I used an AI assistant (Claude, by Anthropic) in a supporting role. The solution builds on my original TypeScript tests and my own choice of what to cover; the assistant helped me with:
+**Disclaimer:** I used an AI assistant (Claude) in a supporting role. The solution builds on my original TypeScript tests and my own choice of what to cover
 
-- porting my TypeScript tests to C#,
 - reviewing them against the brief to spot gaps,
 - debugging failing locators against the live sites,
 - drafting the HTML report script and parts of this README.
