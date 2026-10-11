@@ -90,6 +90,7 @@ open TestResults/test-report.html      # macOS; use xdg-open (Linux) or start (W
 - Tests run against the **live** TfL and Open Library sites, so they depend on the sites being available and on their markup and data not changing. Journey times and access wording vary by time and route, so assertions check structure and plausible values (positive minutes, heading time equals "Total time"), not hard-coded numbers.
 - The response-time check (< 2000 ms) can be affected by network conditions.
 - The baseline images are the small thumbnails returned today; if Open Library re-hosts or re-encodes them the comparison will fail and the baselines need refreshing.
+- The API "results are correct" check verifies that each requested identifier is returned with a matching `bib_key` and an Open Library `info_url`. It does not assert titles or authors; a `jscmd=data` request would be the next step to add that.
 - A small diagnostic helper in the page object (`DumpDetailsDiagnosticsAsync`) writes `details-diagnostics.txt` when the "View details" or access-information steps fail, to speed up diagnosis if TfL changes the page.
 
 ---
